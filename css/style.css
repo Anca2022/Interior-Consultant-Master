@@ -1,1 +1,163 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #181719;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-family: "Crimson Pro", serif;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 5px 5px 0 5px;
+  max-width: 103px;
+}
+
+.mobile-menu {
+  width: 28px;
+}
+
+nav {
+  display: none;
+}
+
+.text-section h1 {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 36px;
+  padding-top: 35px;
+}
+.text-section p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 250px;
+  padding-top: 30px;
+}
+.text-section a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+.text-section a span {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.img-section {
+  position: relative;
+}
+.img-section .main-img {
+  width: 351px;
+}
+.img-section .label {
+  background-color: #181719;
+  width: 300px;
+  height: 138px;
+  position: absolute;
+  bottom: -80px;
+  right: 10px;
+  box-shadow: 1px 4px rgba(0, 0, 0, 0.25);
+}
+.img-section .label .profile-photo {
+  width: 36.6px;
+  border-radius: 50%;
+  float: left;
+  margin: 12px 15px 5px 20px;
+}
+.img-section .label p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.img-section .label .name {
+  font-size: 12px;
+  margin-top: 17px;
+}
+.img-section .label .job-title {
+  font-size: 10px;
+  color: #828282;
+  margin-top: 5px;
+}
+.img-section .label h2 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 15px;
+  margin-left: 20px;
+  width: 210px;
+}
+
+footer {
+  margin-top: 150px;
+  width: 100%;
+  text-align: center;
+  color: #A9A9A9;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+footer a {
+  font-weight: 700;
+  color: #A9A9A9;
+}
+
+nav.menu-display {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 380px;
+  height: 700px;
+  z-index: 999;
+  background-color: #181719;
+}
+nav.menu-display .mobile-menu-exit {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+nav.menu-display ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+}
+nav.menu-display li {
+  list-style: none;
+  margin-top: 35px;
+}
+nav.menu-display a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+nav.menu-display .current {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */
