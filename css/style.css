@@ -10,9 +10,6 @@ body {
 }
 
 .container {
-  max-width: 900px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 20px 12px;
 }
 
@@ -31,7 +28,7 @@ body {
   max-width: 103px;
 }
 
-.mobile-menu {
+#open-menu {
   width: 28px;
 }
 
@@ -134,7 +131,7 @@ nav.menu-display {
   z-index: 999;
   background-color: #181719;
 }
-nav.menu-display .mobile-menu-exit {
+nav.menu-display #exit-menu {
   float: right;
   margin-top: 20px;
   margin-right: 20px;
@@ -156,8 +153,120 @@ nav.menu-display a {
   font-weight: 500;
   font-size: 18px;
 }
-nav.menu-display .current {
+
+.current {
   font-weight: 700;
   border-bottom: 2px solid white;
   padding-bottom: 5px;
+}
+
+@media (min-width: 450px) {
+  .container {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #open-menu, #exit-menu {
+    display: none;
+  }
+  nav {
+    display: block;
+    flex-direction: row;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    list-style: none;
+    padding-right: 10px;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+  }
+  .text-section p {
+    width: 350px;
+  }
+  .img-section .main-img {
+    width: 400px;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    max-width: 910px;
+    padding: 40px 50px;
+  }
+  .main-section {
+    display: flex;
+    margin-top: 130px;
+  }
+  nav li {
+    padding-right: 40px;
+  }
+  .img-section .main-img {
+    width: 450px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    padding: 45px 80px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  nav li {
+    padding-right: 70px;
+  }
+  .main-section .text-section {
+    padding-top: 140px;
+  }
+  .main-section .text-section h1 {
+    font-size: 48px;
+  }
+  .main-section .text-section p {
+    font-size: 24px;
+    width: 410px;
+  }
+  .main-section .text-section a {
+    font-size: 18px;
+  }
+  .main-section .text-section span {
+    font-size: 24px;
+  }
+  .main-section .img-section {
+    margin-left: 140px;
+    margin-top: 50px;
+  }
+  .main-section .img-section .main-img {
+    width: 737px;
+  }
+  .main-section .img-section .label {
+    bottom: -100px;
+    right: 30px;
+    width: 410px;
+    height: 190px;
+  }
+  .main-section .img-section .label .profile-photo {
+    width: 50px;
+    margin: 20px 20px 10px 30px;
+  }
+  .main-section .img-section .label .name {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .main-section .img-section .label .job-title {
+    font-size: 12px;
+  }
+  .main-section .img-section .label h2 {
+    font-size: 24px;
+    padding-top: 30px;
+    margin-left: 30px;
+    width: 287px;
+  }
+  footer {
+    margin-top: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
